@@ -67,9 +67,9 @@ class Lecture1_Cal extends Component{
                             Result:
                             Frequency:
                             <ol>
-                                <li><b>{this.state.Result_Frequency * 1000000}</b> Hz</li>
-                                <li><b>{this.state.Result_Frequency}</b> MHz</li>
-                                <li><b>{this.state.Result_Frequency / 1000}</b> GHz</li>
+                                <li><b>{this.state.Result_Frequency / 1000 }</b> Hz</li>
+                                <li><b>{this.state.Result_Frequency / 1000000000}</b> MHz</li>
+                                <li><b>{this.state.Result_Frequency / 1000000000000}</b> GHz</li>
                             </ol>
                         </div>
                     </div>
@@ -210,7 +210,8 @@ class Lecture1_Cal extends Component{
                         <ol>
                             <li><b>Doppler Shift: {this.state.ds_Result}</b> Hz</li>
                             <li><b>Doppler Spread: {this.state.ds_Result * 2}</b> Hz</li>
-                            <li><b>Coherence Time: {1/(this.state.ds_Result * 2)}</b> ms</li>
+                            <li><b>Coherence Time: {1/(this.state.ds_Result * 2)}</b> s</li>
+                            <li><b>Coherence Time: {1/(this.state.ds_Result * 2) * 1000}</b> ms</li>
                         </ol>
                     </div>
 
